@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: Text("EL-LUNDRY"),
         centerTitle: true,
-        shadowColor: Colors.yellow, //AppBar
+        shadowColor: Color.fromARGB(255, 255, 59, 59),
+        
+          
         
       ),
       drawer: const Drawer(),
@@ -27,7 +29,10 @@ class MyApp extends StatelessWidget {
           children: const [ 
             Text(
               "COUNTER",
-              style:  TextStyle(fontSize: 39), 
+              style:  TextStyle(fontSize: 39, color: Color.fromARGB(255, 198, 3, 3), 
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w900 ), 
+              
               
               ),
               AddCount()

@@ -25,12 +25,19 @@ class _AddCountState extends State<AddCount> {
       children: [
         Center(
           child: Text("$count", style: const TextStyle(fontSize: 30),)
+      
         ),
         Column(
-          children: [
+
+            children: [
             ElevatedButton(onPressed: () {addCount();}, child: const Text("Add")),
-            ElevatedButton(onPressed: () {minusCount();}, child: const Text("Minus")),
+            ElevatedButton(onPressed: () {minusCount();}, 
+            style: const ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber) ), 
+            child: const Text("Minus"),),
+          
           ],
+          
         )
       ],
     );
